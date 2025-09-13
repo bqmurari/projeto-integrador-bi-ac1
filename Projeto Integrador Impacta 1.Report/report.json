@@ -33,17 +33,6 @@
   ],
   "sections": [
     {
-      "config": "{}",
-      "displayName": "Página 2",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "2ffd005a1b9b28840c09",
-      "ordinal": 1,
-      "visualContainers": [],
-      "width": 1280.00
-    },
-    {
       "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Plano de Fundo (1).png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Plano_de_Fundo_(1)6719035496539203.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
       "displayName": "Página 1",
       "displayOption": 1,
