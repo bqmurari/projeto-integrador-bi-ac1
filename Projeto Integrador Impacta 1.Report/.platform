@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Projeto Integrador Impacta 1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e1e0817c-1d67-45c4-ba57-aa6d2b8a27da"
+  }
+}

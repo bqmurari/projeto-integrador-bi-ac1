@@ -1,0 +1,91 @@
+expression 2018_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2018_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 52896617-34e2-47e0-b2e0-83f66631207a
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 2019_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2019_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: b701b4fc-41f4-432a-b64d-e8ed17cd477e
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 2020_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2020_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 74514c56-1fe0-46ef-a745-fda66f83797b
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 2021_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2021_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 7dc16d21-4cf4-4b06-92d0-5b1bb2faa082
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 2022_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2022_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: e59f2be3-70af-403a-926a-6f5c4f32aa17
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 2023_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2023_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 6310ba65-b448-484d-a764-bed108da34b3
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression 2024_OrcamentoDespesa =
+		let
+		    Fonte = Csv.Document(File.Contents("C:\Users\bqmur\Downloads\Orçamentos - Dados Públicos\2024_OrcamentoDespesa.csv"),[Delimiter=";", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"EXERCÍCIO", Int64.Type}, {"CÓDIGO ÓRGÃO SUPERIOR", Int64.Type}, {"NOME ÓRGÃO SUPERIOR", type text}, {"CÓDIGO ÓRGÃO SUBORDINADO", Int64.Type}, {"NOME ÓRGÃO SUBORDINADO", type text}, {"CÓDIGO UNIDADE ORÇAMENTÁRIA", Int64.Type}, {"NOME UNIDADE ORÇAMENTÁRIA", type text}, {"CÓDIGO FUNÇÃO", Int64.Type}, {"NOME FUNÇÃO", type text}, {"CÓDIGO SUBFUNÇÃO", Int64.Type}, {"NOME SUBFUNÇÃO", type text}, {"CÓDIGO PROGRAMA ORÇAMENTÁRIO", Int64.Type}, {"NOME PROGRAMA ORÇAMENTÁRIO", type text}, {"CÓDIGO AÇÃO", type text}, {"NOME AÇÃO", type text}, {"CÓDIGO CATEGORIA ECONÔMICA", Int64.Type}, {"NOME CATEGORIA ECONÔMICA", type text}, {"CÓDIGO GRUPO DE DESPESA", Int64.Type}, {"NOME GRUPO DE DESPESA", type text}, {"CÓDIGO ELEMENTO DE DESPESA", Int64.Type}, {"NOME ELEMENTO DE DESPESA", type text}, {"ORÇAMENTO INICIAL (R$)", Currency.Type}, {"ORÇAMENTO ATUALIZADO (R$)", Currency.Type}, {"ORÇAMENTO EMPENHADO (R$)", Currency.Type}, {"ORÇAMENTO REALIZADO (R$)", Currency.Type}, {"% REALIZADO DO ORÇAMENTO (COM RELAÇÃO AO ORÇAMENTO ATUALIZADO)", Percentage.Type}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 8e863c5e-8a51-485a-af64-ba1f3f72f29d
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
